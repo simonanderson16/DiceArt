@@ -17,10 +17,10 @@ while not filepath_is_valid:
     try:
         img = Image.open(filepath)
         filepath_is_valid = True
+    except OSError:
+        filepath = input("Make sure your filepath is formatted correctly. Enter again: ")
     except FileNotFoundError:
         filepath = input("File not found. Enter filepath again: ")
-    except OSError:
-        filepath = input("Make sure your filepath is formatted correctly (no quotes, use forward slashes). Enter again: ")
     except:
         filepath = input("Please make sure the filepath is valid. Enter again: ")
 
