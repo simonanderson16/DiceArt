@@ -1,6 +1,7 @@
 # DiceArt
 
 The dice_art.py file is the file to be run.
+- Note: the Pillow library must be installed for this program to run
 
 It will ask you for a filepath to turn into dice art.
 - Example: What is the file path for the image you would like to use? **_C:/Users/user/Desktop/directoryName/image.jpg_**
